@@ -14,13 +14,6 @@ const EliteExplorer = () => {
           alt="banner"
           className="aspect-[5/2] object-cover w-full"
         />
-        <div className="absolute top-1/2 -translate-y-1/2 w-full px-8 md:block hidden">
-          <p className=" italic  text-3xl font-medium text-center">
-            Elevating the corporate experience through exceptional service and
-            unparalleled attention to detail, we transform everyday tasks into
-            extraordinary moments of efficiency and sophistication.
-          </p>
-        </div>
       </section>
       <section className="py-4 md:py-8 flex flex-col md:gap-6 gap-3">
         <h4

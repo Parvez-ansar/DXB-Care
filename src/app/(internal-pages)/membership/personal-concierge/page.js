@@ -14,18 +14,25 @@ const PersonalConcierge = () => {
           alt="banner"
           className="aspect-[5/2] object-cover w-full"
         />
-       
       </section>
       <section className="py-4 md:py-8 flex flex-col md:gap-6 gap-3">
-      <h4
+        <h4
           className={`${silk_serif.className} md:text-6xl text-2xl font-medium md:font-semibold text-center`}
         >
           Personal Concierge
         </h4>
         <p className="md:text-2xl text-xs font-light text-center">
-        You prefer a tailor-made suit because it fits you and you alone. At DXB Care, our concierge services are just as personalized. Whether it's planning a getaway, managing daily tasks, or arranging for health, legal, or luxury needs, we're here to cater to your preferences. Just a text away, let us simplify your life with DXB Care
+          You prefer a tailor-made suit because it fits you and you alone. At
+          DXB Care, our concierge services are just as personalized. Whether
+          it's planning a getaway, managing daily tasks, or arranging for
+          health, legal, or luxury needs, we're here to cater to your
+          preferences. Just a text away, let us simplify your life with DXB
+          Care.
         </p>
-        <p className="md:text-3xl text-xs font-bold italic text-center font-sans mb-4 mt-2">We’ll always remember your name and which pillow, floor, or view you prefer.</p>
+        <p className="md:text-3xl text-xs font-bold italic text-center font-sans mb-4 mt-2">
+          We’ll always remember your name and which pillow, floor, or view you
+          prefer.
+        </p>
         <CorporateSlider />
       </section>
 

@@ -14,6 +14,11 @@ import {
 export default function Page() {
   return (
     <div className="w-full h-full flex flex-col gap-6 justify-center items-center">
+      <h1
+        className={`${silk_serif.className} text-center lg:text-7xl md:text-6xl sm:text-5xl text-3xl mt-3 md:-mb-4 -mb-8`}
+      >
+        About Us
+      </h1>
       <div className="md:w-full md:mt-0 mt-4 w-dvw flex flex-col justify-center items-center gap-y-6">
         <section className="-mx-[5.5%] relative">
           <Image
@@ -21,7 +26,6 @@ export default function Page() {
             alt="banner"
             className="aspect-[5/2] object-cover w-full"
           />
-          
         </section>
       </div>
       <div className="w-full flex flex-col gap-y-4 items-center">
@@ -35,7 +39,7 @@ export default function Page() {
           Our commitment to making everything achievable means we provide
           unparalleled availability and a tailored lifestyle that extends well
           into the future. From arriving in Dubai until the day you bid
-          farewell, we ensure every detail is managed with care and precision
+          farewell, we ensure every detail is managed with care and precision.
         </p>
       </div>
       <div className="flex flex-col w-full gap-6">

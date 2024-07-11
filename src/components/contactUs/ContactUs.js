@@ -54,14 +54,14 @@ const ContactUs = () => {
           className="rounded-xl md:rounded-[0] overflow-hidden"
         />
         <p
-          className={`${silk_serif.className} md:hidden absolute bottom-4 text-center px-5 text-sm font-normal`}
+          className={`${silk_serif.className} md:hidden absolute bottom-4 text-center px-5 text-sm font-normal w-full left-1/2 -translate-x-1/2`}
         >
           Feel free to reach out directly or use the adjacent form - We&apos;re
           excited to be a part of your story!
         </p>
       </div>
       <div className="h-full w-full md:absolute inset-0 flex justify-center items-center">
-        <div className="max-w-[80%] mx-auto grid grid-cols-11 gap-8">
+        <div className="md:max-w-[80%] max-w-full w-full mx-auto grid grid-cols-11 gap-8">
           <div className="flex flex-col md:col-span-4 col-span-11 lg:gap-8 md:gap-4">
             <h4
               className={`${silk_serif.className} lg:text-5xl md:text-4xl font-semibold md:block hidden`}
@@ -128,7 +128,7 @@ const ContactUs = () => {
             <input
               type="text"
               className="block md:placeholder:text-xl placeholder:text-sm md:text-xl text-sm placeholder:text-white md:py-[6px] lg:py-2.5 py-1.5 px-0 w-full  text-white bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
-              placeholder="email"
+              placeholder="Email"
               name="email"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
@@ -140,18 +140,15 @@ const ContactUs = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.countryCode}
-              className="block md:py-[6px] lg:py-2.5 py-1.5 px-0 md:text-xl text-sm w-full text-white bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+              className="block md:py-[6px] lg:py-2.5 py-1.5 px-0 md:text-xl text-sm w-full text-white bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
             >
-              <option
-                className="text-white placeholder:text-white text-x"
-                selected
-              >
+              <option className="text-white placeholder:text-white" selected>
                 Country Code
               </option>
               {countryCodes.map((country, i) => (
                 <option
                   key={i}
-                  className="text-white placeholder:text-white text-x"
+                  className="text-white placeholder:text-white"
                   value={country.dial_code}
                 >
                   {country.dial_code} {country.name}

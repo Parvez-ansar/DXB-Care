@@ -12,10 +12,10 @@ import {
 
 const CorporateSlider = () => {
   const slideData = [
-    { image: NewAssistingImage, label: "Assisting with everyday requests" },
-    { image: NewPartiesImage, label: "Event planning" },
+    { image: NewAssistingImage, label: "Everyday Assistance" },
+    { image: NewPartiesImage, label: "Event Planning" },
     { image: NewWellnessImage, label: "Health & Wellness" },
-    { image: NewLegalImage, label: "Financial & legal services" },
+    { image: NewLegalImage, label: "Financial & Legal Services" },
   ];
 
   var settings = {
@@ -52,8 +52,8 @@ const CorporateSlider = () => {
           <div key={i} className="p-1.5 sm:p-3">
             <div className="card-1 duration-300 relative rounded-2xl overflow-hidden">
               <Image src={card.image} alt={card.label} loading="lazy" />
-              <div className="absolute w-full h-full flex inset-0 justify-center items-center bg-black bg-opacity-25">
-                <span className="text-3xl italic text-center md:inline-block hidden">
+              <div className="absolute w-full h-full flex inset-0 justify-center items-center bg-black bg-opacity-30">
+                <span className="lg:text-3xl md:text-xl sm:text-lg text-base italic text-center inline-block">
                   {card.label}
                 </span>
               </div>

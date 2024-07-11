@@ -128,19 +128,29 @@ export default function Header() {
             className="w-[235px] z-20 flex flex-col gap-2 bg-[rgba(255,255,255,1)] rounded-3xl p-6 text-black"
           >
             <MenuItem as="div">
-              <Link href="/" className="block w-full">
-                Home
-              </Link>
+              {({ close }) => (
+                <Link onClick={close} href="/" className="block w-full">
+                  Home
+                </Link>
+              )}
             </MenuItem>
             <MenuItem as="div">
-              <Link href="/about-us" className="block w-full">
-                About Us
-              </Link>
+              {({ close }) => (
+                <Link onClick={close} href="/about-us" className="block w-full">
+                  About Us
+                </Link>
+              )}
             </MenuItem>
             <MenuItem as="div">
-              <Link href="/experiences" className="block w-full">
-                Experience
-              </Link>
+              {({ close }) => (
+                <Link
+                  onClick={close}
+                  href="/experiences"
+                  className="block w-full"
+                >
+                  Experience
+                </Link>
+              )}
             </MenuItem>
             <MenuItem>
               {({ close: menuClose }) => (

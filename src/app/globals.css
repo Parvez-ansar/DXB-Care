@@ -33,3 +33,17 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+.home-exp-slide {
+  padding: 0 20px !important;
+}
+
+.home-mem-slide {
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 639.98px) {
+  .home-mem-slide {
+    padding: 0 20px !important;
+  }
+}
