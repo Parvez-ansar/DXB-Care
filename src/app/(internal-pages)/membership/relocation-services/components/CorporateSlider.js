@@ -4,18 +4,18 @@ import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 import {
-  NewEventImage,
-  NewPartiesImage,
-  NewProposalImage,
-  NewWeb3Image,
+  NewLogisticImage,
+  NewRealEstateImage,
+  NewSettleingImage,
+  NewYogaImage,
 } from "../../../../../../public/image";
 
 const CorporateSlider = () => {
   const slideData = [
-    { image: NewWeb3Image, label: "Web3 Events" },
-    { image: NewProposalImage, label: "Proposals" },
-    { image: NewPartiesImage, label: "Parties Access" },
-    { image: NewEventImage, label: "Special Events" },
+    { image: NewYogaImage, label: "Health & wellness" },
+    { image: NewRealEstateImage, label: "Real estate advisory " },
+    { image: NewLogisticImage, label: "Moving & Logistics" },
+    { image: NewSettleingImage, label: "Seamless settleing solution" },
   ];
 
   var settings = {

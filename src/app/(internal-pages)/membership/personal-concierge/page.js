@@ -3,6 +3,7 @@ import React from "react";
 import CorporateSlider from "./components/CorporateSlider";
 import Link from "next/link";
 import { NewPersonlBanner } from "../../../../../public/image";
+import { silk_serif } from "@/fonts/fonts";
 
 const PersonalConcierge = () => {
   return (
@@ -13,21 +14,18 @@ const PersonalConcierge = () => {
           alt="banner"
           className="aspect-[5/2] object-cover w-full"
         />
-        <div className="absolute top-1/2 -translate-y-1/2 w-full px-8 md:block hidden">
-          <p className=" italic  text-3xl font-medium text-center">
-            Experience the best in personal concierge services. No matter the
-            detail, DXB Care makes your priorities our priority.
-          </p>
-        </div>
+       
       </section>
       <section className="py-4 md:py-8 flex flex-col md:gap-6 gap-3">
+      <h4
+          className={`${silk_serif.className} md:text-6xl text-2xl font-medium md:font-semibold text-center`}
+        >
+          Personal Concierge
+        </h4>
         <p className="md:text-2xl text-xs font-light text-center">
-          At DXB Care, whether you&apos;re planning a luxurious vacation, need
-          everyday assistance, or want help with event planning, health and
-          wellness, financial and legal services, luxury gifting, hassle-free
-          travel, or even a private chef - we&apos;ve got you covered. We handle
-          everything from simple requests to intricate plans with a single text.
+        You prefer a tailor-made suit because it fits you and you alone. At DXB Care, our concierge services are just as personalized. Whether it's planning a getaway, managing daily tasks, or arranging for health, legal, or luxury needs, we're here to cater to your preferences. Just a text away, let us simplify your life with DXB Care
         </p>
+        <p className="md:text-3xl text-xs font-bold italic text-center font-sans mb-4 mt-2">We’ll always remember your name and which pillow, floor, or view you prefer.</p>
         <CorporateSlider />
       </section>
 

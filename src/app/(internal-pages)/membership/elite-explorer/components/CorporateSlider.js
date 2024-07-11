@@ -11,10 +11,10 @@ import {
 
 const CorporateSlider = () => {
   const slideData = [
-    { image: NewExchangeImage, label: "Web3 Events" },
-    { image: NewExplorationImage, label: "Proposals" },
-    { image: NewPlanningImage, label: "Parties Access" },
-    { image: NewExchangeImage, label: "Special Events" },
+    { image: NewExchangeImage, label: "Airport transport service" },
+    { image: NewExplorationImage, label: "Dubai Exploration" },
+    { image: NewPlanningImage, label: "Tailored itineray planning" },
+    { image: NewExchangeImage, label: "Currency exchange & arrangement" },
   ];
 
   var settings = {

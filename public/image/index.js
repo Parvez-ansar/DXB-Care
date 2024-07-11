@@ -49,3 +49,6 @@ export { default as NewPersonalCardImage } from "./personalCard.png";
 export { default as NewRelocationCardImage } from "./relocationCard.png";
 export { default as NewContextUsBgImage } from "./contextUsBg.png";
 export { default as DXBLogo } from "./DXBLogo.png";
+export { default as NewRealEstateImage } from "./realEstate.png";
+export { default as NewLogisticImage } from "./logistic.png";
+export { default as NewSettleingImage } from "./settleing.png";

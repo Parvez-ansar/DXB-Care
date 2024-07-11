@@ -14,12 +14,7 @@ const Relocationservices = () => {
           alt="banner"
           className="aspect-[5/2] object-cover w-full"
         />
-        <div className="absolute top-1/2 -translate-y-1/2 w-full px-8 block">
-          <p className="italic lg:text-3xl md:text-xl sm:text-base text-[10px] leading-snug font-medium text-center">
-            Experience the best in personal concierge services. No matter the
-            detail, DXB Care makes your priorities our priority.
-          </p>
-        </div>
+       
       </section>
       <section className="py-4 md:py-8 flex flex-col md:gap-6 gap-3">
         <h4

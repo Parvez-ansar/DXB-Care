@@ -20,15 +20,7 @@ const CorporateConcierge = () => {
           alt="banner"
           className="aspect-[5/2] object-cover w-full"
         />
-        <div className="absolute top-1/2 -translate-y-1/2 w-full px-8 block">
-          <p
-            className={`${silk_serif.className} italic lg:text-3xl md:text-xl sm:text-base text-[10px] leading-snug font-medium text-center`}
-          >
-            Elevating the corporate experience through exceptional service and
-            unparalleled attention to detail, we transform everyday tasks into
-            extraordinary moments of efficiency and sophistication.
-          </p>
-        </div>
+       
       </section>
       <section className="py-4 md:py-8 flex flex-col md:gap-6 gap-3">
         <h4
@@ -57,7 +49,7 @@ const CorporateConcierge = () => {
         <h5
           className={`${silk_serif.className} text-xl col-span-11 font-semibold text-center md:hidden`}
         >
-          Corporate Memebrship
+          Company Membership
         </h5>
         <div className="col-span-4 relative">
           <Image
@@ -69,25 +61,18 @@ const CorporateConcierge = () => {
         </div>
         <div className="col-span-6 flex flex-col justify-center gap-3">
           <h5
-            className={`${silk_serif.className} text-4xl font-semibold text-center md:block hidden`}
+            className={`${silk_serif.className} text-4xl font-semibold text-left md:block hidden`}
           >
-            Corporate Memebrship
+            Company Membership
           </h5>
           <p className="md:text-3xl text-[10px] font-light">
-            Experience the ultimate in corporate concierge services with DXB
-            Care. Our extensive network caters to all your business needs,
-            including office support, Dubai residency, business setup, legal
-            advisory, event management, and tailored travel solutions. Our
-            commitment to excellence ensures seamless operations for your
-            business. With just a single text, we handle it all, ensuring you
-            stay focused on what matters most. Simplify your business journey
-            with us and thrive effortlessly.
+          We handle the details that keep your business running smoothly and efficiently. Our team is dedicated to managing your office space needs, organizing impactful events, and fostering a balanced work-life environment for your employees. We enhance your client interactions with top-notch hospitality, strengthen your brand with expert management, and provide insightful market research to help you stay ahead of the curve. Just give us the green light, and we'll take care of the rest.
           </p>
         </div>
         <h5
           className={`${silk_serif.className} text-xl col-span-11 font-semibold text-center md:hidden`}
         >
-          Founder Memebrship
+         Founder Membership
         </h5>
         <div className="col-span-6 flex flex-col justify-center gap-3">
           <h5
@@ -96,12 +81,7 @@ const CorporateConcierge = () => {
             Founder Memebrship
           </h5>
           <p className="md:text-3xl text-[10px] font-light">
-            Introducing DXB Care&apos;s Founder&apos;s Membership: your ultimate
-            blend of personal assistance and corporate support. We manage
-            calendars, set reminders, and handle every detail—from travel
-            bookings to event coordination—with just a text. Focus on your
-            vision and success while we streamline your day-to-day. Join today
-            for support as dynamic as your ambitions.
+          Your ultimate blend of personal assistance and corporate support. We manage calendars, set reminders, and handle every detail—from travel bookings to event coordination—with just a text. Focus on your vision and success while we streamline your day-to-day. Join today for support as dynamic as your ambitions.
           </p>
         </div>
 
@@ -128,17 +108,12 @@ const CorporateConcierge = () => {
         </div>
         <div className="col-span-6 flex flex-col justify-center gap-3">
           <h5
-            className={`${silk_serif.className} text-4xl font-semibold text-center md:block hidden`}
+            className={`${silk_serif.className} text-4xl font-semibold text-left md:block hidden`}
           >
             Employee Membrship
           </h5>
           <p className="md:text-3xl text-[10px] font-light">
-            Introducing DXB Care&apos;s Employee Membership: where we optimize
-            your team&apos;s productivity and efficiency! Our service is
-            tailored to streamline tasks and enhance work-life balance. From
-            simplifying daily operations to providing essential perks,
-            we&apos;re dedicated to helping you attract and retain top talent.
-            Join us and elevate your team&apos;s performance!
+          We optimize your team's productivity and efficiency! Our service is tailored to streamline tasks and enhance work-life balance. From simplifying daily operations to providing essential perks, we're dedicated to helping you attract and retain top talent. By managing employees' personal lives and enhancing their well-being, we ensure your employees can focus solely on increasing productivity and achieving aligned goals.
           </p>
         </div>
       </section>
