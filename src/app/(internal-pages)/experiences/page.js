@@ -29,6 +29,7 @@ import {
   NewYatchImage,
   NewYogaImage,
 } from "../../../../public/image";
+import Link from "next/link";
 
 const pageData = [
   {
@@ -144,6 +145,14 @@ export default function Page() {
           </Slider>
         </div>
       ))}
+      <section className="flex flex-col gap-6 md:pb-10 pb-4 -mt-4">
+        <Link
+          href="/contact-us"
+          className="bg-white text-black py-1 px-2 sm:py-3 sm:px-4 text-xs sm:text-xl font-semibold rounded-full self-center"
+        >
+          Contact us
+        </Link>
+      </section>
     </main>
   );
 }

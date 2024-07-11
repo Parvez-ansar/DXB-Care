@@ -11,6 +11,8 @@ import {
   NewRelocationCardImage,
 } from "../../../../public/image";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
 const Membership = () => {
   var settings = {
     dots: false,
@@ -37,6 +39,7 @@ const Membership = () => {
           initialSlide: 0,
           arrows: false,
           infinite: false,
+          variableWidth: true,
         },
       },
     ],
@@ -71,10 +74,32 @@ const Membership = () => {
 
   return (
     <div className="landing-page-slider -mx-6 sm:-mx-0">
-      <Slider {...settings}>
-        {slideData.map((card, i) => {
-          return (
-            <div key={i} className="p-1.5 sm:p-3 text-center text-black">
+      <Swiper
+        slidesPerView={2.3}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[]}
+        breakpoints={{
+          640: {
+            slidesPerView: 2.4,
+            // spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            // spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            // spaceBetween: 50,
+          },
+        }}
+        className="home-mem-slide"
+      >
+        {slideData.map((card) => (
+          <SwiperSlide key={card.heading}>
+            <div className="p-1.5 sm:p-2 md:p-3 text-center text-black ">
               <div className="p-3 bg-white rounded-3xl">
                 <div>
                   <Image
@@ -114,10 +139,9 @@ const Membership = () => {
                 </div>
               </div>
             </div>
-          );
-        })}
-        <div />
-      </Slider>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };

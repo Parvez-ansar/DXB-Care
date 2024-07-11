@@ -2,6 +2,7 @@ import Image from "next/image";
 import { DXBLogo } from "../../../public/image";
 import { InstagramIcon, LinkedIn, XIcon } from "../../../public/icons";
 import { silk_serif } from "@/fonts/fonts";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -59,7 +60,12 @@ export default function Footer() {
               >
                 Company
               </h1>
-              <p className="text-white font-normal text-base">About Us</p>
+              <Link
+                href={"/about-us"}
+                className="text-white font-normal text-base"
+              >
+                About Us
+              </Link>
             </div>
             <div className="flex flex-col md:items-start items-center">
               <h1
@@ -67,10 +73,34 @@ export default function Footer() {
               >
                 Contact US
               </h1>
-              <p className="text-white font-normal text-base">Mail Us</p>
-              <p className="text-white font-normal text-base">Whatsapp</p>
-              <p className="text-white font-normal text-base">Telegram</p>
-              <p className="text-white font-normal text-base">Schedule Call</p>
+              <a
+                href="https://www.WordPress.com"
+                target="_blank"
+                className="text-white font-normal text-base"
+              >
+                Mail Us
+              </a>
+              <a
+                href="https://wa.me/919599005868?"
+                target="_blank"
+                className="text-white font-normal text-base"
+              >
+                Whatsapp
+              </a>
+              <a
+                href="https://telegram.me/dxbcare?"
+                target="_blank"
+                className="text-white font-normal text-base"
+              >
+                Telegram
+              </a>
+              <a
+                href="https://calendly.com/dxbcare/15min"
+                target="_blank"
+                className="text-white font-normal text-base"
+              >
+                Schedule Call
+              </a>
             </div>
             <div className="flex flex-col md:items-start items-center">
               <h1
