@@ -25,7 +25,7 @@ const Experiences = () => {
     },
     {
       img: NewhomeYatchImage,
-      heading: "Yatch",
+      heading: "Yacht",
       text: "Sail with elegance, power, and strength. Enjoy smooth voyages while chasing sunsets, hosting parties, or exploring peaceful coves. Our rental yacht service is tailored to meet your unique preferences, offering customizable experiences for every occasion, ensuring your maritime adventures are exactly as you envision.",
     },
     {

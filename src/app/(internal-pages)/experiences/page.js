@@ -36,7 +36,7 @@ const pageData = [
     title: "Luxe Experience",
     data: [
       { image: NewLuxuryCarImage, label: "Luxury Car" },
-      { image: NewYatchImage, label: "Yatch" },
+      { image: NewYatchImage, label: "Yacht" },
       { image: NewLuxeShoppingImage, label: "Luxe Shopping" },
       { image: NewJetImage, label: "Private Jet" },
     ],
@@ -51,7 +51,7 @@ const pageData = [
     ],
   },
   {
-    title: "Desert Saffari",
+    title: "Desert Safari",
     data: [
       { image: NewBbqDiningImage, label: "BBQ Dinner" },
       { image: NewQuadBikingImage, label: "Quad Biking" },
@@ -73,16 +73,16 @@ const pageData = [
     data: [
       { image: NewMeditationImage, label: "Yoga" },
       { image: NewSpaImage, label: "Spa" },
-      { image: NewJumbaImage, label: "Aerobics/Jumba" },
+      { image: NewJumbaImage, label: "Aerobics/Zumba" },
       { image: NewYogaImage, label: "Meditation" },
     ],
   },
   {
-    title: "Events Management",
+    title: "Event Management",
     data: [
       { image: NewWeb3Image, label: "Web3 Events" },
       { image: NewProposalImage, label: "Proposals" },
-      { image: NewPartiesImage, label: "Parties Access" },
+      { image: NewPartiesImage, label: "Party Access" },
       { image: NewEventImage, label: "Special Events" },
     ],
   },
@@ -133,7 +133,7 @@ export default function Page() {
                 <div key={i} className="p-1.5 sm:p-3">
                   <div className="card-1 duration-300 relative rounded-2xl overflow-hidden">
                     <Image src={card.image} alt={card.label} loading="lazy" />
-                    <div className="absolute w-full h-full flex inset-0 justify-center items-center bg-black bg-opacity-25">
+                    <div className="absolute w-full h-full flex inset-0 justify-center items-center bg-black bg-opacity-30">
                       <span className="md:text-3xl sm:text-2xl text-lg italic text-center inline-block">
                         {card.label}
                       </span>

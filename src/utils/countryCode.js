@@ -1,5 +1,15 @@
 export const countryCodes = [
   {
+    name: "United Arab Emirates",
+    dial_code: "+971",
+    code: "AE",
+  },
+  {
+    name: "India",
+    dial_code: "+91",
+    code: "IN",
+  },
+  {
     name: "Afghanistan",
     dial_code: "+93",
     code: "AF",
@@ -483,11 +493,6 @@ export const countryCodes = [
     name: "Iceland",
     dial_code: "+354",
     code: "IS",
-  },
-  {
-    name: "India",
-    dial_code: "+91",
-    code: "IN",
   },
   {
     name: "Indonesia",
@@ -1138,11 +1143,6 @@ export const countryCodes = [
     name: "Ukraine",
     dial_code: "+380",
     code: "UA",
-  },
-  {
-    name: "United Arab Emirates",
-    dial_code: "+971",
-    code: "AE",
   },
   {
     name: "United Kingdom",

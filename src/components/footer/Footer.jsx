@@ -111,9 +111,7 @@ export default function Footer() {
               <p className="text-white font-normal text-base">
                 Terms & Conditions
               </p>
-              <p className="text-white font-normal text-base">
-                Privacy Policies
-              </p>
+              <p className="text-white font-normal text-base">Privacy Policy</p>
             </div>
           </div>
         </div>
