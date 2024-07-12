@@ -9,9 +9,27 @@ import { countryCodes } from "@/utils/countryCode";
 import * as Yup from "yup";
 import { silk_serif } from "@/fonts/fonts";
 import { NewContextUsBgImage } from "../../../public/image";
+import emailjs from "emailjs-com";
 
 const ContactUs = () => {
-  const handleEmailSubmit = () => {};
+  const handleEmailSubmit = (values, { resetForm }) => {
+    debugger;
+    console.log("Sending email with values:", values);
+    emailjs
+      .send("service_iep68ys", "template_twabenb", values, "e_omdj8V6TYaozSHu")
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          alert("Message sent successfully!");
+          resetForm();
+        },
+        (error) => {
+          console.error("Failed to send email:", error.text);
+          alert("Failed to send message, please try again later.");
+        }
+      );
+  };
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -44,7 +62,7 @@ const ContactUs = () => {
     onSubmit: handleEmailSubmit,
   });
 
-  console.log(formik.values);
+  console.log(formik.errors);
   return (
     <section className="relative pb-10">
       <div className="relative px-3 md:px-0">
@@ -53,40 +71,43 @@ const ContactUs = () => {
           alt="Contact Us"
           className="rounded-xl md:rounded-[0] overflow-hidden"
         />
-        <p
-          className={`${silk_serif.className} md:hidden absolute bottom-4 text-center px-5 text-sm font-normal w-full left-1/2 -translate-x-1/2`}
-        >
-          Feel free to reach out directly or use the adjacent form - We&apos;re
-          excited to be a part of your story!
-        </p>
+        <div className="md:hidden absolute bottom-4 left-1/2 -translate-x-1/2 w-full">
+          <h3
+            className={`text-center font-semibold text-2xl ${silk_serif.className}`}
+          >
+            Contact Us
+          </h3>
+          <p className={` text-center px-5 text-sm font-normal `}>
+            Feel free to reach out directly or use the form - We&apos;re excited
+            to be a part of your story!
+          </p>
+        </div>
       </div>
       <div className="h-full w-full md:absolute inset-0 flex justify-center items-center">
-        <div className="md:max-w-[80%] max-w-full w-full mx-auto grid grid-cols-11 gap-8">
+        <div className="lg:max-w-[80%] md:max-w-[90%] max-w-full w-full mx-auto grid grid-cols-11 gap-8 md:px-0 px-5">
           <div className="flex flex-col md:col-span-4 col-span-11 lg:gap-8 md:gap-4">
             <h4
               className={`${silk_serif.className} lg:text-5xl md:text-4xl font-semibold md:block hidden`}
             >
               Contact Us
             </h4>
-            <p
-              className={`lg:text-2xl md:text-lg md:block hidden ${silk_serif.className}`}
-            >
-              Feel free to reach out directly or use the adjacent form -
-              We&apos;re excited to be a part of your story!
+            <p className={`lg:text-2xl md:text-lg md:block hidden `}>
+              Feel free to reach out directly or use the form - We&apos;re
+              excited to be a part of your story!
             </p>
             <div className="grid grid-cols-2 lg:gap-6 md:gap-3 gap-6 md:mt-0 mt-6">
               <a
-                href="https://www.WordPress.com"
+                href="mailto:hello@dxb.care"
                 target="_blank"
-                className="flex items-center gap-2 md:text-base lg:text-xl text-sm md:col-span-2 col-span-1"
+                className="flex items-center md:justify-start justify-center gap-2 md:text-base lg:text-xl text-sm md:col-span-2 col-span-1"
               >
                 <MdOutlineMail className="md:w-6 lg:w-7 w-5 md:h-6 lg:h-7 h-5" />
-                <span>Mail</span>
+                <span className="md:mr-0 mr-[33px] block">Email Us</span>
               </a>
               <a
                 href="https://telegram.me/dxbcare?"
                 target="_blank"
-                className="flex items-center gap-2 md:text-base lg:text-xl text-sm md:col-span-2 col-span-1"
+                className="flex items-center md:justify-start justify-center gap-2 md:text-base lg:text-xl text-sm md:col-span-2 col-span-1"
               >
                 <BsTelegram className="md:w-6 lg:w-7 w-5 md:h-6 lg:h-7 h-5" />
                 <span>Telegram</span>
@@ -94,15 +115,15 @@ const ContactUs = () => {
               <a
                 href="https://calendly.com/dxbcare/15min"
                 target="_blank"
-                className="flex items-center gap-2 md:text-base lg:text-xl text-sm md:col-span-2 col-span-1"
+                className="flex items-center md:justify-start justify-center gap-2 md:text-base lg:text-xl text-sm md:col-span-2 col-span-1"
               >
                 <FaRegCalendar className="md:w-6 lg:w-7 w-5 md:h-6 lg:h-7 h-5" />
-                <span>Schedule a call</span>
+                <span>Schedule call</span>
               </a>
               <a
                 href="https://wa.me/919599005868?"
                 target="_blank"
-                className="flex items-center gap-2 md:text-base lg:text-xl text-sm md:col-span-2 col-span-1"
+                className="flex items-center md:justify-start justify-center gap-2 md:text-base lg:text-xl text-sm md:col-span-2 col-span-1"
               >
                 <BsWhatsapp className="md:w-6 lg:w-7 w-5 md:h-6 lg:h-7 h-5" />
                 <span>Whatsapp</span>
@@ -110,7 +131,7 @@ const ContactUs = () => {
             </div>
           </div>
           <form
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={formik.handleSubmit}
             className="md:col-span-7 col-span-11 flex flex-col lg:gap-5 md:gap-2 gap-5"
           >
             <h4 className="text-3xl font-semibold text-center md:block hidden">
@@ -173,6 +194,7 @@ const ContactUs = () => {
               value={formik.values.enquiry}
               name="enquiry"
             />
+
             <button
               type="submit"
               disabled={!formik.isValid}

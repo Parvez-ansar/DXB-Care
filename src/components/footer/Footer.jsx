@@ -14,7 +14,7 @@ export default function Footer() {
               src={DXBLogo}
               style={{ height: "auto" }}
               quality={100}
-              className="md:w-[220px] lg:w-[300px] w-[100px]"
+              className="md:w-[220px] lg:w-[250px] w-[155px]"
             />
             <div className="flex gap-x-6 items-center">
               <a href="https://www.instagram.com/dxbcare/" target="_blank">
@@ -22,7 +22,7 @@ export default function Footer() {
                   src={InstagramIcon}
                   width={0}
                   height={0}
-                  style={{ width: "auto", height: "auto" }}
+                  style={{ width: "25px", height: "auto" }}
                   quality={100}
                 />
               </a>
@@ -34,7 +34,7 @@ export default function Footer() {
                   src={XIcon}
                   width={0}
                   height={0}
-                  style={{ width: "auto", height: "auto" }}
+                  style={{ width: "25px", height: "auto" }}
                   quality={100}
                 />
               </a>
@@ -46,77 +46,79 @@ export default function Footer() {
                   src={LinkedIn}
                   width={0}
                   height={0}
-                  style={{ width: "auto", height: "auto" }}
+                  style={{ width: "25px", height: "auto" }}
                   quality={100}
                 />
               </a>
             </div>
-            <a href="mailto:hello@dxb.care">hello@dxb.care</a>
+            <a href="mailto:hello@dxb.care" target="_blank">
+              hello@dxb.care
+            </a>
           </div>
           <div className="flex md:flex-row flex-col md:order-2 order-1 gap-x-10 gap-y-4">
             <div className="flex flex-col md:items-start items-center">
               <h1
-                className={`font-medium text-xl italic ${silk_serif.className}`}
+                className={`font-semibold text-[21px]  ${silk_serif.className}`}
               >
                 Company
               </h1>
               <Link
                 href={"/about-us"}
-                className="text-white font-normal text-base"
+                className="text-white font-normal text-sm"
               >
                 About Us
               </Link>
             </div>
             <div className="flex flex-col md:items-start items-center">
               <h1
-                className={`font-medium text-xl italic ${silk_serif.className}`}
+                className={`font-semibold text-[21px]  ${silk_serif.className}`}
               >
-                Contact US
+                Contact Us
               </h1>
               <a
-                href="https://www.WordPress.com"
+                href="mailto:hello@dxb.care"
                 target="_blank"
-                className="text-white font-normal text-base"
+                className="text-white font-normal text-sm"
               >
-                Mail Us
+                Email Us
               </a>
               <a
                 href="https://wa.me/919599005868?"
                 target="_blank"
-                className="text-white font-normal text-base"
+                className="text-white font-normal text-sm"
               >
                 Whatsapp
               </a>
               <a
                 href="https://telegram.me/dxbcare?"
                 target="_blank"
-                className="text-white font-normal text-base"
+                className="text-white font-normal text-sm"
               >
                 Telegram
               </a>
               <a
                 href="https://calendly.com/dxbcare/15min"
                 target="_blank"
-                className="text-white font-normal text-base"
+                className="text-white font-normal text-sm"
               >
                 Schedule Call
               </a>
             </div>
             <div className="flex flex-col md:items-start items-center">
               <h1
-                className={`font-medium text-xl italic ${silk_serif.className}`}
+                className={`font-semibold text-[21px]  ${silk_serif.className}`}
               >
                 Information
               </h1>
-              <p className="text-white font-normal text-base">
+              <p className="text-white font-normal text-sm">
                 Terms & Conditions
               </p>
-              <p className="text-white font-normal text-base">Privacy Policy</p>
+              <p className="text-white font-normal text-sm">Privacy Policy</p>
             </div>
           </div>
         </div>
         <p className="text-white text-center font-normal text-[12px] md:text-base">
-          All copyrights reserve to DXB.Care.com
+          All copyrights reserve to DXB.Care
         </p>
       </div>
     </footer>

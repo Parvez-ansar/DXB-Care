@@ -36,7 +36,7 @@ const CorporateSlider = () => {
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 3.2,
+          slidesToShow: 2.8,
           slidesToScroll: 2,
           initialSlide: 0,
           arrows: false,

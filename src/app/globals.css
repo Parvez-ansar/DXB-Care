@@ -47,3 +47,7 @@ input[type="number"] {
     padding: 0 20px !important;
   }
 }
+
+.home-mem-slide .swiper-slide {
+  height: unset !important;
+}

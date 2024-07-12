@@ -73,7 +73,7 @@ const pageData = [
     data: [
       { image: NewMeditationImage, label: "Yoga" },
       { image: NewSpaImage, label: "Spa" },
-      { image: NewJumbaImage, label: "Aerobics/Zumba" },
+      { image: NewJumbaImage, label: "Aerobics & Zumba" },
       { image: NewYogaImage, label: "Meditation" },
     ],
   },
@@ -109,7 +109,7 @@ export default function Page() {
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 3.2,
+          slidesToShow: 2.8,
           slidesToScroll: 2,
           initialSlide: 0,
           arrows: false,
@@ -146,6 +146,11 @@ export default function Page() {
         </div>
       ))}
       <section className="flex flex-col gap-6 md:pb-10 pb-4 -mt-4">
+        <p className="md:text-2xl text-xs font-semibold text-center">
+          Found your dream experience? Let's go!
+          <br />
+          <span className="italic">Need a tweak? We're here to chat!</span>
+        </p>
         <Link
           href="/contact-us"
           className="bg-white text-black py-1 px-2 sm:py-3 sm:px-4 text-xs sm:text-xl font-semibold rounded-full self-center"

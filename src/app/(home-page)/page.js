@@ -22,13 +22,20 @@ export default function Home() {
           <source src="/videos/banner.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <Link
-          href="/contact-us"
-          className="flex z-10 items-center gap-2 absolute left-1/2 -translate-x-[50%] sm:bottom-44 bottom-4 border-2 border-white rounded-full text-sm sm:text-2xl font-medium py-1 px-4 sm:py-3 sm:px-5"
-        >
-          <span>Contact us</span>
-          <MdOutlineArrowRightAlt className="md:block hidden" />
-        </Link>
+        <div className="z-10 absolute left-1/2 -translate-x-[50%] md:bottom-28 bottom-10 w-full flex flex-col sm:gap-10 gap-6">
+          <p
+            className={` md:text-3xl sm:text-2xl text-lg font-medium sm:px-40 px-7 text-center ${silk_serif.className}`}
+          >
+            Our Concierge Magic: Turning 'I wish' into 'I did'.
+          </p>
+          <Link
+            href="/contact-us"
+            className="flex  items-center gap-2 self-center border-2 border-white rounded-full text-sm md:text-2xl font-medium py-1 px-4 md:py-3 md:px-5"
+          >
+            <span className="">Contact us</span>
+            <MdOutlineArrowRightAlt className="md:block hidden" />
+          </Link>
+        </div>
       </section>
       <section className="text-center flex flex-col gap-3 sm:gap-6 py-6 sm:py-10">
         <h3

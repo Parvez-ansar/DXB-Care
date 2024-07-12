@@ -26,7 +26,7 @@ const Membership = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3.2,
+          slidesToShow: 4,
           slidesToScroll: 2,
           // initialSlide: 2,
         },
@@ -98,9 +98,9 @@ const Membership = () => {
         className="home-mem-slide"
       >
         {slideData.map((card) => (
-          <SwiperSlide key={card.heading}>
-            <div className="p-1.5 sm:p-2 md:p-3 text-center text-black ">
-              <div className="p-3 bg-white rounded-3xl">
+          <SwiperSlide className="flex h-[unset]" key={card.heading}>
+            <div className="px-1.5 sm:px-2 md:px-3 text-center text-black h-full flex ">
+              <div className="p-3 bg-white rounded-3xl flex flex-col">
                 <div>
                   <Image
                     className="rounded-2xl overflow-hidden"
@@ -108,18 +108,18 @@ const Membership = () => {
                     alt={card.heading}
                   />
                 </div>
-                <div className="flex flex-col pt-2 gap-2 -mx-2 sm:-mx-0">
+                <div className="flex flex-col grow pt-2 gap-2 -mx-2 sm:-mx-0">
                   <h5
                     className={`${silk_serif.className} text-xl sm:text-3xl font-medium sm:font-semibold text-ellipsis whitespace-nowrap overflow-hidden`}
                   >
                     {card.heading}
                   </h5>
-                  <p className="text-[9px] font-light sm:text-base -mx-1 sm:-mx-0">
+                  <p className="text-[9px] font-light sm:text-base -mx-1 grow sm:-mx-0 px-2">
                     {card.text}
                   </p>
                   <Link
                     href={card.to}
-                    className="hover:bg-black duration-300 md:px-4 border md:border-2 border-black justify-center self-center hover:text-white md:w-[unset] w-full rounded-xl flex items-center md:gap-2 gap-1.5 sm:rounded-2xl text-xs sm:text-base  font-medium "
+                    className="hover:bg-black duration-300 md:px-4 border md:border-2 border-black justify-center self-center hover:text-white md:w-[unset] px-2 rounded-xl flex items-center md:gap-2 gap-1.5 sm:rounded-2xl text-xs sm:text-base  font-medium "
                   >
                     <span className="py-1.5 sm:py-3 block">Explore More</span>
                     <svg

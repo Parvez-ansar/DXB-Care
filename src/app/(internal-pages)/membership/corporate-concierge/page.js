@@ -84,7 +84,7 @@ const CorporateConcierge = () => {
           <h5
             className={`${silk_serif.className} text-4xl font-semibold text-center md:block hidden`}
           >
-            Founder Memebrship
+            Founder Membership
           </h5>
           <p className="md:text-3xl text-[10px] font-light sm:text-sm">
             Your ultimate blend of personal assistance and corporate support. We
